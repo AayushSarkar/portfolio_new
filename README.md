@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧑‍💻 Aayush Sarkar — Developer Portfolio
 
 Welcome to my personal developer portfolio built using **Next.js**, **Tailwind CSS**, and **Framer Motion**. This portfolio showcases my projects, skills, resume, and professional journey through a responsive and interactive design.
@@ -87,3 +88,6 @@ Feel free to use, modify, and share it for learning or showcasing your own portf
 - [Framer Motion](https://www.framer.com/motion/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - Inspiration from awesome developers around the web ✨
+=======
+# portfolio_new
+>>>>>>> e92f66e4a75c7ce24c5f3be504f5e321917ce032
