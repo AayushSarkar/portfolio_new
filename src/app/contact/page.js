@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
@@ -27,13 +27,12 @@ export default function ContactPage() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Lottie Animation */}
           <div className="flex-1 flex justify-center">
-            {/* Safe to dynamically import, SSR disabled */}
             <Lottie animationData={handshakeAnimation} className="w-72 md:w-84 h-auto" loop />
           </div>
 
           {/* Contact Info */}
           <div className="flex-1 space-y-6 text-center md:text-left">
-            <h2 className="text-2xl font-semibold text-cyan-300">Let's Connect</h2>
+            <h2 className="text-2xl font-semibold text-cyan-300">Let&apos;s Connect</h2>
             <p className="text-gray-300 text-sm">
               Whether you want to collaborate, chat tech, or just say hi, feel free to reach out!
             </p>

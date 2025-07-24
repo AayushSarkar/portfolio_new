@@ -1,6 +1,8 @@
 'use client';
+
 import { FaGlobe, FaUserTie, FaGamepad, FaCode, FaTrophy } from 'react-icons/fa';
 import { SiGlitch } from 'react-icons/si';
+import Image from 'next/image';
 
 const achievements = [
   {
@@ -10,13 +12,6 @@ const achievements = [
     desc: "Founded ADTC at ANDC DU to empower students via workshops, hackathons, and industry ties. Reached 2000+ students from 25+ top colleges.",
     logo: "/adtc-logo.png",
   },
-  // {
-  //   title: "CEO, Esports Org",
-  //   year: "2023",
-  //   icon: () => <FaTrophy className="text-black" />,
-  //   desc: "Directed branding, managed players, and built sponsor ties across 20+ orgs.",
-  //   logo: "/esports-logo.png",
-  // },
   {
     title: "Managed Team Blood Reapers",
     year: "2021",
@@ -57,11 +52,14 @@ export default function AchievementsPage() {
             <div className="bg-[#1e293b] p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-cyan-400/30 transition duration-300">
               <div className="flex items-center gap-4 mb-3">
                 {item.logo && (
-                  <img
-                    src={item.logo}
-                    alt={item.title}
-                    className="w-12 h-12 object-contain rounded-lg border border-cyan-500/30"
-                  />
+                  <div className="relative w-12 h-12">
+                    <Image
+                      src={item.logo}
+                      alt={item.title}
+                      fill
+                      className="object-contain rounded-lg border border-cyan-500/30"
+                    />
+                  </div>
                 )}
                 <h3 className="text-2xl sm:text-3xl font-semibold text-white">{item.title}</h3>
               </div>
